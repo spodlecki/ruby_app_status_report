@@ -55,3 +55,12 @@ bundle exec rake ruby_gems:fetch_new_gems
 * Create a feature branch
 * Write code & tests
 * Submit PR, let us know what you've done
+
+
+## TODO / Wish list
+
+* Add GitHub API + Write cleaner Job Code
+* Update ActiveJobs to use [Resque](https://github.com/resque/resque) or [Sidekiq](https://github.com/mperham/sidekiq)
+* Get an email or Slack feature where notifications could be posted
+* Setup JavaScript test suite
+* Setup Travis CI
