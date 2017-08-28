@@ -1,0 +1,98 @@
+#app-display {
+  & > a.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 500;
+  }
+  & > * {
+    margin: 0;
+    padding: 0;
+  }
+  /* This feels like overkill... */
+  #app-display-items {
+    display:                -webkit-flex;
+    display:                flex;
+    margin:                 0 -10px;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap:      wrap;
+            flex-wrap:      wrap;
+    -webkit-align-content:  space-around;
+            align-content:  space-around;
+
+    .item-container {
+      margin:             5px;
+      padding:            0;
+      width:              100%;
+      -webkit-flex-grow:  1;
+              flex-grow:  1;
+
+      @media(min-width: 780px) {
+        width: 50%;
+      }
+
+      @media(min-width: 900px) {
+        width: 33%;
+      }
+
+      @media(min-width: 1150px) {
+        width: 25%;
+      }
+
+      @media(min-width: 1300px) {
+        width: 20%;
+      }
+
+      @media(min-width: 1400px) {
+        width: 15%;
+      }
+
+      @media(min-width: 1500px) {
+        width: 12%;
+      }
+    }
+  }
+
+  @media print {
+    a.close {
+      display: none;
+    }
+
+    & > .btn-group {
+      display: none;
+    }
+
+    #app-display-items {
+      display: block;
+      padding: 10px;
+      margin-top: 40px;
+      .item-container {
+        display: inline-block;
+        float: left;
+        width: 25%;
+        margin: 0;
+        padding: 5px;
+        height: 150px;
+        page-break-inside: avoid;
+        .item {
+          display: block;
+          border: 1px solid $black;
+
+          .fa {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 22px;
+          }
+
+          .item-title {
+            word-break: break-all;
+            white-space: normal;
+            overflow: inherit;
+          }
+        }
+      }
+    }
+  }
+}

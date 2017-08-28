@@ -1,0 +1,54 @@
+.app-list {
+  display: block;
+  .app {
+    display: block;
+    width: 100%;
+    height: $app-box-height;
+    background-color: $gray-lighter;
+    margin-bottom: 15px;
+    & > div {
+      height: 100%;
+    }
+
+    & > .alert {
+      text-align: center;
+      line-height: $app-box-height;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+    .slick-slider {
+      position: relative;
+      display: inline-block;
+      float: left;
+      background-color: lighten($gray-lighter, 4%);
+      width: calc(100% - 200px - 25px - 25px);
+      margin-left: $app-arrow-width;
+      & > .slick-arrow {
+        &:before {
+          color: $black;
+          opacity: 1;
+        }
+        &.slick-disabled:before {
+          opacity: 0.4;
+        }
+        top: 0;
+        bottom: 0;
+        width: $app-arrow-width;
+        height: 100%;
+        color: $black;
+        -webkit-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                transform: none;
+      }
+      .slick-list, .slick-track, .item-container {
+        height: 100%;
+      }
+      .item-container {
+        display: block;
+        cursor: move;
+      }
+    }
+  }
+}

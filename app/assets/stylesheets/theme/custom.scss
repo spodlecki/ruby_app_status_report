@@ -1,0 +1,30 @@
+/* Navbar */
+$unit:                  10px !default;
+$menu-width:            $unit * 20 !default;
+
+/* Colors */
+$gray-darker:           lighten(#000, 13.5%) !default; // #222
+$gray-dark:             lighten(#000, 20%) !default;   // #333
+$gray:                  lighten(#000, 33.5%) !default; // #555
+$gray-light:            lighten(#000, 46.7%) !default; // #777
+$gray-lighter:          lighten(#000, 93.5%) !default; // #eee
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$defcon-5:              $brand-success !default; // #bada79
+$defcon-4:              lighten($brand-info, 10%) !default; // #dbd077
+$defcon-3:              #f7b44c !default;
+$defcon-2:              #ed9e75 !default;
+$defcon-1:              #e4736d !default;
+
+
+$white:                 #fff !default;
+$black:                 #000 !default;
+
+$app-main-width:        200px !default;
+$app-arrow-width:       25px !default;
+$app-box-height:        100px !default;

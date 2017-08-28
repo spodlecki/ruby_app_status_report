@@ -1,0 +1,5 @@
+{
+  "application.js": "http://0.0.0.0:8080/pack/application.js",
+  "components/font_icon.js": "http://0.0.0.0:8080/pack/components/font_icon.js",
+  "layout/navigation.js": "http://0.0.0.0:8080/pack/layout/navigation.js"
+}

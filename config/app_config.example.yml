@@ -1,0 +1,10 @@
+common: &common
+  defaults:
+    gitlab_endpoint:
+    gitlab_token:
+test:
+  <<: *common
+development:
+  <<: *common
+production:
+  <<: *common

@@ -1,0 +1,14 @@
+{
+  "application.js": "http://0.0.0.0:8080/app/application.js",
+  "components/font_icon.js": "http://0.0.0.0:8080/app/components/font_icon.js",
+  "components/item_box.js": "http://0.0.0.0:8080/app/components/item_box.js",
+  "layout/navigation.js": "http://0.0.0.0:8080/app/layout/navigation.js",
+  "layout/template.js": "http://0.0.0.0:8080/app/layout/template.js",
+  "screens/apps.js": "http://0.0.0.0:8080/app/screens/apps.js",
+  "screens/apps/display.js": "http://0.0.0.0:8080/app/screens/apps/display.js",
+  "screens/apps/index.js": "http://0.0.0.0:8080/app/screens/apps/index.js",
+  "screens/apps/index/row.js": "http://0.0.0.0:8080/app/screens/apps/index/row.js",
+  "screens/apps/index/title.js": "http://0.0.0.0:8080/app/screens/apps/index/title.js",
+  "screens/notifications.js": "http://0.0.0.0:8080/app/screens/notifications.js",
+  "screens/setup.js": "http://0.0.0.0:8080/app/screens/setup.js"
+}

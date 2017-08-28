@@ -1,0 +1,71 @@
+.item-container {
+  position: relative;
+  display: inline-block;
+  padding: 0 3px;
+  .item {
+    color: #fff;
+    background-color: $gray;
+    text-align: center;
+    height: 100%;
+    padding: 0 5px;
+    .fa {
+      position: absolute;
+      top: 11px;
+      left: 5px;
+      font-size: 18px;
+    }
+    .item-title {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      margin: 0 10px 0 20px;
+      padding-top: 11px;
+      color: #000;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    .item-details {
+      margin: 0;
+      font-size: 37px;
+      line-height: 52px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    .item-note {
+      font-size: 10px;
+    }
+    &.defcon-1 {
+      background-color: $defcon-1;
+      .fa:before {
+        content: "\f119";
+      }
+    }
+    &.defcon-2 {
+      background-color: $defcon-2;
+      // exclamation-triangle
+      .fa:before {
+        content: "\f06a";
+      }
+    }
+    &.defcon-3 {
+      background-color: $defcon-3;
+      // exclamation-triangle
+    }
+    &.defcon-4 {
+      background-color: $defcon-4;
+      // exclamation-triangle
+    }
+    &.defcon-5 {
+      background-color: $defcon-5;
+      // exclamation-triangle
+      .fa:before {
+        content: "\f259";
+      }
+    }
+  }
+}

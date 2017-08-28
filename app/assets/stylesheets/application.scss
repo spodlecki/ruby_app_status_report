@@ -1,0 +1,49 @@
+@charset 'utf-8';
+/* Vendor Styles */
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap-sprockets";
+
+/* Styleguide */
+@import "theme/custom";
+@import "theme/bootstrap";
+
+@import "bootstrap";
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Components */
+@import "components/navigation";
+@import "components/app-title";
+@import "components/item-box";
+@import "components/close";
+
+
+/* Screens */
+@import "screens/apps/index";
+@import "screens/apps/display";
+@import "screens/GemsScreen";
+
+#content {
+  display: block;
+  padding-left: $menu-width + $grid-gutter-width;
+  padding-top: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+@media print {
+  #admin-nav {
+    display: none !important;
+  }
+  #content {
+    padding: 0;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+}
